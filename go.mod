@@ -1,4 +1,4 @@
-module maximprotos
+module github.com/steephseqq/maximprotos
 
 go 1.25.1
 
