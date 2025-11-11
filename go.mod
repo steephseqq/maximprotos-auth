@@ -1,4 +1,4 @@
-module github.com/steephseqq/maximprotos
+module github.com/steephseqq/maximprotos/gen/go/sso
 
 go 1.25.1
 
