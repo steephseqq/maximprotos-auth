@@ -1,4 +1,4 @@
-module maxim-protos
+module maximprotos
 
 go 1.25.1
 
