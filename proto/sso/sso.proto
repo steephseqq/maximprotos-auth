@@ -5,9 +5,21 @@ package auth;
 
 option go_package="./auth;authpb";
 
+import "google/api/annotations.proto";
+
 service Auth{
-    rpc Register(RegisterRequest) returns (RegisterResponse);
-    rpc Login(LoginRequest) returns (LoginResponse);
+    rpc Register(RegisterRequest) returns (RegisterResponse){
+        option (google.api.http) = {
+            post: "/v1/register"
+            body: "*"
+        };
+    };
+    rpc Login(LoginRequest) returns (LoginResponse){
+        option (google.api.http) = {
+            post: "/v1/login"
+            body: "*"
+        };
+    };
 }
 
 message RegisterRequest{
